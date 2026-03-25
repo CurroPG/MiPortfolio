@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('fade-up');
+                // Trigger progress bars if the element contains them
+                const bars = entry.target.querySelectorAll('.skill-progress-bar');
+                bars.forEach(bar => {
+                    const targetWidth = bar.getAttribute('data-width');
+                    if (targetWidth) bar.style.width = targetWidth;
+                });
                 observer.unobserve(entry.target);
             }
         });
@@ -183,11 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "edu-pedro-espinosa-d1": "Educación orientada a la tecnología, matemáticas y ciencias aplicadas.",
             "edu-pedro-espinosa-d2": "Desarrollo de capacidad analítica y razonamiento lógico-matemático.",
             "edu-pedro-espinosa-d3": "Bases sólidas en sistemas digitales, física y lógica.",
-            "edu-b1-cert": "Certificado de Inglés B1",
-            "edu-b1-cert-degree": "Certificación Oficial - Nivel Intermedio (B1)",
-            "edu-b1-cert-d1": "Competencia en comunicación escrita y verbal.",
-            "edu-b1-cert-d2": "Capacidad para interactuar en entornos profesionales internacionales.",
-            "edu-b1-cert-d3": "Base sólida para el desarrollo continuo de habilidades lingüísticas.",
+            "edu-pedro-espinosa-d3": "Bases sólidas en sistemas digitales, física y lógica.",
             "projects-title": "Proyecto Estrella",
             "project-neonbrawl-desc": "Sobrevive a la horda en este trepidante juego de acción browser-based. Creado íntegramente desde cero, NeoNBrawL es el resultado de mi pasión por el desarrollo de juegos indie.",
             "project-neonbrawl-d1": "Desarrollado desde cero",
@@ -201,6 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "skill-html-css-desc": "Responsive Design, Animaciones, Glassmorphism, Layouts",
             "skill-sql-desc": "Diseño de BD, Consultas Complejas, MySQL, PostgreSQL",
             "skill-davinci-desc": "Edición de Video, Corrección de Color, Motion Graphics",
+            "skill-english-title": "Inglés (B1)",
+            "skill-english-desc": "Certificación B1, Competencia Profesional",
             "contact-title": "Contacto",
             "contact-email-label": "Email",
             "contact-phone-label": "Teléfono",
@@ -238,11 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "edu-pedro-espinosa-d1": "Technology, mathematics, and applied sciences oriented education.",
             "edu-pedro-espinosa-d2": "Development of analytical capacity and logical-mathematical reasoning.",
             "edu-pedro-espinosa-d3": "Solid foundations in digital systems, physics, and logic.",
-            "edu-b1-cert": "B1 English Certificate",
-            "edu-b1-cert-degree": "Official Certification - Intermediate Level (B1)",
-            "edu-b1-cert-d1": "Proficiency in written and verbal communication.",
-            "edu-b1-cert-d2": "Ability to interact in international professional environments.",
-            "edu-b1-cert-d3": "Solid base for continuous development of language skills.",
+            "edu-pedro-espinosa-d3": "Solid foundations in digital systems, physics, and logic.",
             "projects-title": "Featured Project",
             "project-neonbrawl-desc": "Survive the horde in this fast-paced browser-based action game. Created entirely from scratch, NeoNBrawL is the result of my passion for indie game development.",
             "project-neonbrawl-d1": "Developed from scratch",
@@ -256,6 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "skill-html-css-desc": "Responsive Design, Animations, Glassmorphism, Layouts",
             "skill-sql-desc": "DB Design, Complex Queries, MySQL, PostgreSQL",
             "skill-davinci-desc": "Video Editing, Color Correction, Motion Graphics",
+            "skill-english-title": "English (B1)",
+            "skill-english-desc": "B1 Certification, Professional Proficiency",
             "contact-title": "Contact",
             "contact-email-label": "Email",
             "contact-phone-label": "Phone",
