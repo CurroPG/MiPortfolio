@@ -507,19 +507,92 @@ footer {
     resize: none;
 }
 
-/* Mobile Responsive Adjustments */
+/* --- Mobile Responsive System --- */
+@media (max-width: 992px) {
+    nav { padding: 15px 5% !important; }
+    section { padding: 80px 5%; }
+}
+
 @media (max-width: 768px) {
+    /* Navigation & Menu */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--text-main);
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: rgba(10, 10, 12, 0.98);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        border-left: 1px solid var(--glass-border);
+        z-index: 100;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        margin: 0 !important;
+        font-size: 1.2rem;
+    }
+
+    .lang-btn { margin: 0; margin-top: 10px; }
+
+    /* Typography Scale */
+    h1 { font-size: 3rem !important; }
+    h2 { font-size: 2.2rem !important; }
+
+    /* Sections Adjustment */
+    .hero-content { padding-top: 50px; }
+    
+    .project-focus {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .project-img-container {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+    }
+
     .contact-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    .timeline::after {
-        left: 5px;
-    }
-    .timeline-item {
-        padding-left: 30px;
-    }
-    .timeline-item::after {
-        left: -3px;
-    }
+
+    /* Timeline */
+    .timeline::after { left: 5px; }
+    .timeline-item { padding-left: 35px; }
+    .timeline-item::after { left: -3px; }
 }
+
+@media (max-width: 480px) {
+    h1 { font-size: 2.5rem !important; }
+    .btn-primary { width: 100%; text-align: center; justify-content: center; }
+    .project-focus h3 { font-size: 2rem; }
+}
+
+/* Ensure menu toggle is hidden on desktop */
+.menu-toggle { display: none; }

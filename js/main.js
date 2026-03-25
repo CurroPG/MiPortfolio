@@ -29,6 +29,34 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.opacity = '0';
     });
 
+    // --- Mobile Menu Toggle ---
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            // Toggle icon between menu and x
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
+    }
+
     // Smooth scroll for anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -143,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "about-title": "Sobre Mí",
             "about-p1": "Apasionado por aprender y mejorarme cada día. Como estudiante de **Desarrollo de Aplicaciones Multiplataforma (DAM)**, exploro las fronteras de la programación con un interés especial en la ciberseguridad y la Inteligencia Artificial.",
             "about-p2": "Disfruto creando experiencias interactivas desde cero, aplicando lógica de resolución de problemas y trabajando en equipo bajo metodologías ágiles.",
+            "about-p3": "Convertidor oficial de café en código, experto en cerrar 50 pestañas de Stack Overflow tras encontrar un punto y coma, y actualmente buscando mi primer reto real (mis plantas ya sospechan que no soy rico).",
             "edu-title": "Formación Académica",
             "edu-alan-turing": "CPIFP Alan Turing",
             "edu-alan-turing-degree": "Desarrollo de Aplicaciones Multiplataforma (DAM)",
@@ -197,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "about-title": "About Me",
             "about-p1": "Passionate about learning and improving every day. As a **Multiplatform Application Development (DAM)** student, I explore the frontiers of programming with a special interest in cybersecurity and Artificial Intelligence.",
             "about-p2": "I enjoy creating interactive experiences from scratch, applying problem-solving logic, and working in a team under agile methodologies.",
+            "about-p3": "Official coffee-to-code converter, expert at closing 50 Stack Overflow tabs after finding a semicolon, and currently looking for my first real challenge (my plants already suspect I'm not rich).",
             "edu-title": "Academic Background",
             "edu-alan-turing": "CPIFP Alan Turing",
             "edu-alan-turing-degree": "Multiplatform Application Development (DAM)",
