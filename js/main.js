@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-message-label": "Mensaje",
             "form-message-placeholder": "¿En qué puedo ayudarte?",
             "form-submit": "Enviar Mensaje",
-            "footer-copy": "&copy; 2026 Curro Portillo Guerrero"
+            "footer-copy": "&copy; 2026 Curro Portillo Guerrero. Todos los derechos reservados."
         },
         en: {
             "nav-about": "About Me",
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-message-label": "Message",
             "form-message-placeholder": "How can I help you?",
             "form-submit": "Send Message",
-            "footer-copy": "&copy; 2026 Curro Portillo Guerrero"
+            "footer-copy": "&copy; 2026 Curro Portillo Guerrero. All rights reserved."
         }
     };
 
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
+                el.innerHTML = translations[lang][key];
             }
         });
 
