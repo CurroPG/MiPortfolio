@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curro Portillo | Portfolio</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="bg-blobs">
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+        <div class="interactive-glow"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav
+        style="position: fixed; width: 100%; padding: 20px 10%; z-index: 100; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo" style="font-weight: 800; font-size: 1.5rem; letter-spacing: 2px;">CURRO<span
+                class="neon-text">PG</span></div>
+        <div class="nav-links">
+            <a href="#about"
+                style="color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600;">Sobre
+                mí</a>
+            <a href="#projects"
+                style="color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600;">Proyectos</a>
+            <a href="#education"
+                style="color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600;">Formación</a>
+            <a href="#skills"
+                style="color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600;">Habilidades</a>
+            <a href="#contact"
+                style="color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 600;">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 id="hero-title" class="fade-up">Curro <span class="neon-text">Portillo</span></h1>
+            <p id="hero-subtitle" class="hero-subtitle fade-up" style="animation-delay: 0.2s;">Estudiante de DAM</p>
+            <div class="fade-up" style="animation-delay: 0.4s;">
+                <a href="#projects" class="btn-primary">Ver Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="neon-text" style="margin-bottom: 40px;">Sobre Mí</h2>
+        <div class="glass">
+            <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                Apasionado por aprender y mejorarme cada día. Como estudiante de **Desarrollo de Aplicaciones
+                Multiplataforma (DAM)**, exploro las fronteras de la programación con un interés especial en la
+                ciberseguridad y la Inteligencia Artificial.
+            </p>
+            <p style="font-size: 1.1rem; color: var(--text-muted);">
+                Disfruto creando experiencias interactivas desde cero, aplicando lógica de resolución de problemas y
+                trabajando en equipo bajo metodologías ágiles.
+            </p>
+            <div style="margin-top: 30px; display: flex; gap: 20px;">
+                <a href="https://www.linkedin.com/in/curro-portillo-guerrero-075600390/" target="_blank"
+                    class="btn-primary" style="padding: 10px 25px; font-size: 0.9rem;">
+                    <i data-lucide="linkedin" style="width: 18px; vertical-align: middle; margin-right: 5px;"></i>
+                    LinkedIn
+                </a>
+                <a href="mailto:curroportilloguerrero@gmail.com" class="btn-primary"
+                    style="padding: 10px 25px; font-size: 0.9rem; border-color: var(--secondary-neon); color: var(--secondary-neon); box-shadow: 0 0 15px var(--secondary-neon);">
+                    <i data-lucide="mail" style="width: 18px; vertical-align: middle; margin-right: 5px;"></i> Contactar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="neon-text" style="margin-bottom: 40px;">Formación Académica</h2>
+        <div class="timeline">
+            <!-- Alan Turing -->
+            <div class="timeline-item">
+                <div class="glass education-card">
+                    <div class="edu-header">
+                        <h3>CPIFP Alan Turing</h3>
+                        <span class="edu-date">09/2025 – 06/2027</span>
+                    </div>
+                    <p style="font-weight: 600; color: var(--text-main);">Desarrollo de Aplicaciones Multiplataforma
+                        (DAM)</p>
+                    <ul class="edu-details">
+                        <li>Formación avanzada en programación y bases de datos.</li>
+                        <li>Desarrollo de software para distintas plataformas móviles y desktop.</li>
+                        <li>Resolución de problemas técnicos complejos y trabajo en equipo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pedro Espinosa -->
+            <div class="timeline-item">
+                <div class="glass education-card">
+                    <div class="edu-header">
+                        <h3>IES Pedro Espinosa</h3>
+                        <span class="edu-date">09/2023 – 06/2025</span>
+                    </div>
+                    <p style="font-weight: 600; color: var(--text-main);">Bachillerato Tecnológico</p>
+                    <ul class="edu-details">
+                        <li>Educación orientada a la tecnología, matemáticas y ciencias aplicadas.</li>
+                        <li>Desarrollo de capacidad analítica y razonamiento lógico-matemático.</li>
+                        <li>Bases sólidas en sistemas digitales, física y lógica.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project: NeoNBrawL -->
+    <section id="projects">
+        <h2 class="neon-text" style="margin-bottom: 40px;">Proyecto Estrella</h2>
+        <div class="project-focus glass">
+            <div class="project-img-container">
+                <!-- If the user has a thumbnail, they can replace this src -->
+                <img src="neonbrawl_thumbnail.png" alt="NeoNBrawL Thumbnail">
+            </div>
+            <div class="project-info">
+                <h3 style="font-size: 2.5rem; margin-bottom: 15px;">NeoN<span class="neon-text">BrawL</span></h3>
+                <p style="margin-bottom: 25px; color: var(--text-muted);">
+                    Sobrevive a la horda en este trepidante juego de acción browser-based. Creado íntegramente desde
+                    cero, NeoNBrawL es el resultado de mi pasión por el desarrollo de juegos indie.
+                </p>
+                <ul style="list-style: none; margin-bottom: 30px;">
+                    <li style="margin-bottom: 10px;"><i data-lucide="check-circle"
+                            style="color: var(--primary-neon); vertical-align: middle; margin-right: 10px;"></i>
+                        Desarrollado desde cero</li>
+                    <li style="margin-bottom: 10px;"><i data-lucide="check-circle"
+                            style="color: var(--primary-neon); vertical-align: middle; margin-right: 10px;"></i> Jugable
+                        en el navegador</li>
+                    <li style="margin-bottom: 10px;"><i data-lucide="check-circle"
+                            style="color: var(--primary-neon); vertical-align: middle; margin-right: 10px;"></i>
+                        Estética Neon Retrofuturista</li>
+                </ul>
+                <a href="https://cucupg.itch.io/neonbrawl" target="_blank" class="btn-primary"
+                    style="display: inline-flex; align-items: center; gap: 10px;">
+                    <i data-lucide="play"></i> Jugar Ahora en Itch.io
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="neon-text" style="margin-bottom: 40px;">Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-item glass">
+                <i data-lucide="code-2"
+                    style="width: 40px; height: 40px; color: var(--primary-neon); margin-bottom: 15px;"></i>
+                <h4>Java</h4>
+                <p class="skill-details">POO, Swing, Estructuras de Datos, Algoritmos</p>
+            </div>
+            <div class="skill-item glass">
+                <i data-lucide="layout"
+                    style="width: 40px; height: 40px; color: var(--primary-neon); margin-bottom: 15px;"></i>
+                <h4>HTML / CSS</h4>
+                <p class="skill-details">Responsive Design, Animaciones, Glassmorphism, Layouts</p>
+            </div>
+            <div class="skill-item glass">
+                <i data-lucide="database"
+                    style="width: 40px; height: 40px; color: var(--primary-neon); margin-bottom: 15px;"></i>
+                <h4>SQL</h4>
+                <p class="skill-details">Diseño de BD, Consultas Complejas, MySQL, PostgreSQL</p>
+            </div>
+            <div class="skill-item glass">
+                <i data-lucide="video"
+                    style="width: 40px; height: 40px; color: var(--primary-neon); margin-bottom: 15px;"></i>
+                <h4>DaVinci Resolve</h4>
+                <p class="skill-details">Edición de Video, Corrección de Color, Motion Graphics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="neon-text" style="margin-bottom: 40px;">Contacto</h2>
+        <div class="glass contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <p class="contact-label">Email</p>
+                        <p class="contact-value">curroportilloguerrero@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <div>
+                        <p class="contact-label">Teléfono</p>
+                        <p class="contact-value">722 30 91 12</p>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                        ¿Tienes algún proyecto en mente o simplemente quieres decir hola? ¡Hablemos!
+                    </p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2026 Curro Portillo Guerrero</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/curro-portillo-guerrero-075600390/" target="_blank"><i
+                    data-lucide="linkedin"></i></a>
+            <a href="https://github.com/CurroPG" target="_blank"><i data-lucide="github"></i></a>
+            <a href="mailto:curroportilloguerrero@gmail.com"><i data-lucide="mail"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
