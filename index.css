@@ -246,6 +246,68 @@ h3 {
     color: var(--bg-color);
 }
 
+/* CV Button Styles */
+.cv-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.cv-container:hover {
+    border-color: var(--primary-neon);
+    background: rgba(0, 242, 255, 0.05);
+}
+
+.cv-label {
+    font-weight: 700;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.cv-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cv {
+    text-decoration: none;
+    color: var(--primary-neon);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 5px 12px;
+    border: 1px solid var(--primary-neon);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-cv:hover {
+    background: var(--primary-neon);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px var(--primary-neon);
+}
+
+.btn-cv-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-cv-icon:hover {
+    color: var(--primary-neon);
+    transform: translateY(-2px);
+    filter: drop-shadow(0 0 5px var(--primary-neon));
+}
+
 /* Project Card (NeoNBrawL Focus) */
 .project-focus {
     display: grid;

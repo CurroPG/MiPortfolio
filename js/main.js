@@ -223,6 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-message-label": "Mensaje",
             "form-message-placeholder": "¿En qué puedo ayudarte?",
             "form-submit": "Enviar Mensaje",
+            "cv-view": "Ver",
+            "cv-download": "Descargar",
             "footer-copy": "&copy; 2026 Curro Portillo Guerrero. Todos los derechos reservados."
         },
         en: {
@@ -282,6 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "form-message-label": "Message",
             "form-message-placeholder": "How can I help you?",
             "form-submit": "Send Message",
+            "cv-view": "View",
+            "cv-download": "Download",
             "footer-copy": "&copy; 2026 Curro Portillo Guerrero. All rights reserved."
         }
     };
