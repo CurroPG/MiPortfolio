@@ -308,6 +308,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        document.querySelectorAll('[data-i18n-title]').forEach(el => {
+            const key = el.getAttribute('data-i18n-title');
+            if (translations[lang][key]) {
+                el.title = translations[lang][key];
+            }
+        });
+
         langBtn.textContent = lang.toUpperCase();
         localStorage.setItem('portfolio-lang', lang);
     }
