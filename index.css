@@ -259,6 +259,46 @@ h1, h2, h3 {
     transform: scale(1.05);
 }
 
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.project-card-small {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    height: 100%;
+}
+
+.project-card-small .project-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-neon);
+}
+
+.project-card-small h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.project-card-small p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.project-card-small .btn-primary {
+    align-self: flex-start;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
 /* Future Projects Card */
 .future-projects-card {
     margin-top: 40px;
