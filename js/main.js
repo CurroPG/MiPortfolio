@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Mobile Menu Toggle ---
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
+
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const ctx = canvas.getContext('2d');
         let particles = [];
         const particleCount = 60;
-        
+
         const resize = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('mousemove', (e) => {
             mouseX = e.clientX;
             mouseY = e.clientY;
-            
+
             // Update glow position
             if (glow) {
                 glow.style.left = `${mouseX}px`;
@@ -196,10 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "project-neonbrawl-d2": "Jugable en el navegador",
             "project-neonbrawl-d3": "Estética Neon Retrofuturista",
             "project-neonbrawl-btn": "Jugar Ahora en Itch.io",
-            "project-ra03-title": "Proyecto RA03",
-            "project-ra03-desc": "Desarrollo de lógica en Javascript y fundamentos de programación web.",
-            "project-ra04-title": "Proyecto RA04",
-            "project-ra04-desc": "Manipulación avanzada del DOM y gestión dinámica de contenidos.",
+            "project-ra03-title": "Piedra, Papel, Tijera, Lagarto o Spock",
+            "project-ra03-desc": "Desarrollo de lógica en Javascript con el famoso juego de la serie Big Bang Theory.",
+            "project-ra04-title": "Studio Ghibli",
+            "project-ra04-desc": "Manipulación avanzada del DOM y gestión dinámica de contenidos con la API de Studio Ghibli.",
             "repo-btn": "Repositorio",
             "future-projects-title": "Próximamente más proyectos",
             "future-projects-desc": "Actualmente me encuentro en una fase constante de aprendizaje, desarrollando nuevas ideas y proyectos conforme progreso en mi formación en DAM. ¡Vuelve pronto para ver mis nuevas creaciones!",
@@ -254,10 +254,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "project-neonbrawl-d2": "Playable in the browser",
             "project-neonbrawl-d3": "Neon Retro-futuristic Aesthetic",
             "project-neonbrawl-btn": "Play Now on Itch.io",
-            "project-ra03-title": "Project RA03",
-            "project-ra03-desc": "Javascript logic development and web programming foundations.",
-            "project-ra04-title": "Project RA04",
-            "project-ra04-desc": "Advanced DOM manipulation and dynamic content management.",
+            "project-ra03-title": "Rock, Paper, Scissors, Lizard, Spock",
+            "project-ra03-desc": "Javascript logic development featuring the famous game from The Big Bang Theory.",
+            "project-ra04-title": "Studio Ghibli",
+            "project-ra04-desc": "Advanced DOM manipulation and dynamic content management using the Studio Ghibli API.",
             "repo-btn": "Repository",
             "future-projects-title": "More projects coming soon",
             "future-projects-desc": "I am currently in a constant phase of learning, developing new ideas and projects as I progress in my DAM training. Come back soon to see my new creations!",

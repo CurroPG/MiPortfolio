@@ -98,8 +98,15 @@ body {
 }
 
 @keyframes breathe {
-    0% { transform: scale(1) translate(0, 0); opacity: 0.1; }
-    100% { transform: scale(1.2) translate(50px, -50px); opacity: 0.2; }
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: scale(1.2) translate(50px, -50px);
+        opacity: 0.2;
+    }
 }
 
 #bg-canvas {
@@ -118,7 +125,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
+    background-image:
         linear-gradient(rgba(0, 242, 255, 0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 242, 255, 0.04) 1px, transparent 1px);
     background-size: 60px 60px;
@@ -131,8 +138,13 @@ body {
 }
 
 @keyframes grid-scroll {
-    from { background-position: 0 0; }
-    to { background-position: 0 1000px; }
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 1000px;
+    }
 }
 
 .blob-2 {
@@ -165,7 +177,9 @@ section {
     justify-content: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -326,9 +340,21 @@ h1, h2, h3 {
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; text-shadow: 0 0 10px var(--secondary-neon); }
-    100% { transform: scale(1); opacity: 0.8; }
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+        text-shadow: 0 0 10px var(--secondary-neon);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
 }
 
 /* Skills Grid */
@@ -370,7 +396,8 @@ h1, h2, h3 {
     background: linear-gradient(90deg, var(--primary-neon), var(--secondary-neon));
     border-radius: 4px;
     box-shadow: 0 0 10px var(--primary-neon);
-    width: 0; /* Animated later or set by inline style if preferred */
+    width: 0;
+    /* Animated later or set by inline style if preferred */
     transition: width 1.5s cubic-bezier(0.1, 0, 0.2, 1);
 }
 
@@ -563,7 +590,7 @@ footer {
     color: var(--text-main);
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
@@ -575,7 +602,7 @@ footer {
     outline: none;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary-neon);
     background: rgba(255, 255, 255, 0.08);
@@ -588,11 +615,17 @@ footer {
 
 /* --- Mobile Responsive System --- */
 @media (max-width: 992px) {
-    nav { padding: 15px 5% !important; }
-    section { padding: 80px 5%; }
+    nav {
+        padding: 15px 5% !important;
+    }
+
+    section {
+        padding: 80px 5%;
+    }
 }
 
 @media (max-width: 768px) {
+
     /* Navigation & Menu */
     .menu-toggle {
         display: block;
@@ -632,15 +665,25 @@ footer {
         font-size: 1.2rem;
     }
 
-    .lang-btn { margin: 0; margin-top: 10px; }
+    .lang-btn {
+        margin: 0;
+        margin-top: 10px;
+    }
 
     /* Typography Scale */
-    h1 { font-size: 3rem !important; }
-    h2 { font-size: 2.2rem !important; }
+    h1 {
+        font-size: 3rem !important;
+    }
+
+    h2 {
+        font-size: 2.2rem !important;
+    }
 
     /* Sections Adjustment */
-    .hero-content { padding-top: 50px; }
-    
+    .hero-content {
+        padding-top: 50px;
+    }
+
     .project-focus {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -662,16 +705,36 @@ footer {
     }
 
     /* Timeline */
-    .timeline::after { left: 5px; }
-    .timeline-item { padding-left: 35px; }
-    .timeline-item::after { left: -3px; }
+    .timeline::after {
+        left: 5px;
+    }
+
+    .timeline-item {
+        padding-left: 35px;
+    }
+
+    .timeline-item::after {
+        left: -3px;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 { font-size: 2.5rem !important; }
-    .btn-primary { width: 100%; text-align: center; justify-content: center; }
-    .project-focus h3 { font-size: 2rem; }
+    h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .project-focus h3 {
+        font-size: 2rem;
+    }
 }
 
 /* Ensure menu toggle is hidden on desktop */
-.menu-toggle { display: none; }
+.menu-toggle {
+    display: none;
+}
