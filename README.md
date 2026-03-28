@@ -2,7 +2,7 @@
 
 ¡Bienvenido a mi portfolio personal! Este proyecto es mi carta de presentación online, donde publico y documento mis proyectos, formación y experiencia como estudiante de Desarrollo de Aplicaciones Multiplataforma (DAM).
 
-🔗 **Enlace:** *(añade aquí el enlace a GitHub Pages o tu hosting si lo tienes desplegado)*
+🔗 **Enlace:** [https://mi-portfolio-tau-two.vercel.app/](https://mi-portfolio-tau-two.vercel.app/)
 
 ## 🚀 Características
 
